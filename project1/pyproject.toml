@@ -1,0 +1,55 @@
+[tool.ruff]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# Same as Black.
+indent-width = 4
+line-length = 79
+output-format = "json"
+target-version = "py310"
+
+[tool.ruff.lint]
+extend-select = ["E501", "E999", "E402", "E101", "D102", "D103", "D419", "F", "W293", "B015", "B018", "B021", "B020", "D103", "D201", "D202", "E722", "E721", "E712", "E702","E402", "F701", "F702"]
+extend-ignore = []
+
+fixable = ["ALL"]
+unfixable = []
+
+[too.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
