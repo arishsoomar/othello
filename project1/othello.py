@@ -1,5 +1,5 @@
 # Arish Soomar
-# CSCI 1913: Section 002
+
 
 import random as r
 
